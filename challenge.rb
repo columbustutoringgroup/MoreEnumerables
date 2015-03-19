@@ -4,7 +4,7 @@ def capitalize_each_string(input)
 end
 
 def fetch_the_dog(input)
-  input.select { |e| e == "dog"}
+  input.find_all { |e| e == "dog"}
 end
 
 def no_dogs_allowed(input)
