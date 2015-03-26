@@ -1,26 +1,27 @@
 
-def capitalize_each_string(input)
+def capitalize_each_string(*animal)
   #implement your solution here
+  animal.each { |a| puts a.capitalize }
 end
 
-def fetch_the_dog(input)
+def fetch_the_dog(*animal)
   #implement your solution here
+  animal.find(ifnone = nil) {|a| a == 'dog' }
 end
 
-def no_dogs_allowed(input)
+def count_the_animals(*animal)
   #implement your solution here
+  animal.count
 end
 
-def count_the_animals(input)
+def fetch_the_first_two(*animal)
   #implement your solution here
+  animal.first(2)
 end
 
-def fetch_the_first_two(input)
+def fetch_CD_animals(*animal)
   #implement your solution here
-end
-
-def fetch_CD_animals(input)
-  #implement your solution here
+  animal.find_all { |a| a.start_with?('c', 'd') }
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
