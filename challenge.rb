@@ -11,7 +11,7 @@ end
 
 def no_dogs_allowed(animal)
   #implement your solution here
-  animal.find_all {|a| a != 'dog' }
+  animal.reject {|a| a == 'dog' }
 end
 
 def count_the_animals(animal)
@@ -26,7 +26,7 @@ end
 
 def fetch_CD_animals(animal)
   #implement your solution here
-  animal.find_all { |a| a.start_with?('c', 'd') }
+  animal.select { |a| a.start_with?('c', 'd') }
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
