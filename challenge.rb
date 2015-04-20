@@ -20,7 +20,7 @@ def fetch_the_first_two(input)
 end
 
 def fetch_CD_animals(input)
-  input.reject { |i| !%w(dog cat).include?(i) }
+  input.grep(/^(dog|cat)$/)
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
