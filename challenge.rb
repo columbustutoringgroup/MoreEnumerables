@@ -8,7 +8,7 @@ def fetch_the_dog(input)
 end
 
 def no_dogs_allowed(input)
-  input.select {|x| x != "dog"}
+  input.reject {|x| x == "dog"}
 end
 
 def count_the_animals(input)
@@ -20,6 +20,7 @@ def fetch_the_first_two(input)
 end
 
 def fetch_CD_animals(input)
+  input.select {|x| x[0] == 'c' || x[0] == 'd'}
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
