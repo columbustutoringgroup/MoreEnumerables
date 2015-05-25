@@ -8,7 +8,7 @@ def fetch_the_dog(input)
 end
 
 def no_dogs_allowed(input)
-  #implement your solution here
+  input.reject { |str| str.match(/dog/) }
 end
 
 def count_the_animals(input)
