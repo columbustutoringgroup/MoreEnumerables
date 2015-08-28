@@ -11,13 +11,8 @@ end
 
 def no_dogs_allowed(input)
   #implement your solution here
-  animals = Array.new
-  for animal in input
-  	if animal != "dog"
-  		animals << animal
-  	end
-  end
-  return animals
+  input.reject{|animal| animal == "dog"}
+  
 end
 
 def count_the_animals(input)
@@ -26,25 +21,12 @@ def count_the_animals(input)
 end
 
 def fetch_the_first_two(input)
-  #implement your solution here
-  animals = Array.new
-  input.each_with_index	do |animal, idx|
-  	if idx == 0  || idx == 1
-		animals << input[idx]  	
-  	end
-  end
-  animals
+  input.take(2)
 end
 
 def fetch_CD_animals(input)
   #implement your solution here
-  animals = Array.new
-  input.each do |animal|
-  	if animal.start_with? "c" or animal.start_with? "d"
-  		animals << animal
-  	end
-  end
-  animals
+  input.find_all { |animal| animal.start_with? "c" or animal.start_with? "d"}
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
