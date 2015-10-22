@@ -1,6 +1,6 @@
 
 def capitalize_each_string(input)
-  input.map { |word| word.capitalize }
+  input.map(&:capitalize)
 end
 
 def fetch_the_dog(input)
