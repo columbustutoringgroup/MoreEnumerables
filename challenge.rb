@@ -4,17 +4,13 @@ def capitalize_each_string(input)
 end
 
 def fetch_the_dog(input)
-  [input.fetch(2)]
+  [input.fetch(input.index('dog'))]
 end
 
 def no_dogs_allowed(input)
-  arr = []
-  input.each do |str|
-    if str != 'dog'
-      arr.push str
-    end
+  input.reject do |str|
+    str == 'dog'
   end
-  arr
 end
 
 def count_the_animals(input)
