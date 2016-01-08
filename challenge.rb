@@ -1,26 +1,49 @@
 
 def capitalize_each_string(input)
-  #implement your solution here
+	input.map do |s|
+		s.capitalize
+	end
 end
 
 def fetch_the_dog(input)
   #implement your solution here
+  dog = false
+  doWeHaveDog = input.include?("dog")
+  if doWeHaveDog == true
+  	dog = ["dog"]
+  end
+  dog
 end
 
 def no_dogs_allowed(input)
   #implement your solution here
+  inputNoDog = input.clone
+  inputNoDog.delete_if do |animal|
+  	animal == "dog"
+  end
+  inputNoDog
 end
 
 def count_the_animals(input)
-  #implement your solution here
+	input.count
 end
 
 def fetch_the_first_two(input)
   #implement your solution here
+  input[0..1]
 end
 
 def fetch_CD_animals(input)
   #implement your solution here
+  cd = []
+  cd << "c" << "d"
+  animals = []
+  input.each do |animal|
+  	if cd.include?(animal[0])
+  		animals.push(animal)
+  	end
+  end
+  animals
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
