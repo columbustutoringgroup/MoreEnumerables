@@ -1,14 +1,14 @@
 
 def capitalize_each_string(input)
-  input.map { |eachstr| eachstr.capitalize }
+  input.map { |str| eachstr.capitalize }
 end
 
 def fetch_the_dog(input)
-  input.select { |dogstr| dogstr == "dog"  }
+  input.select { |animalstr| dogstr == "dog"  }
 end
 
 def no_dogs_allowed(input)
-  input.reject { |nodogstr| nodogstr == "dog"  }
+  input.reject { |animalstr| nodogstr == "dog"  }
 end
 
 def count_the_animals(input)
