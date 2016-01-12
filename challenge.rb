@@ -1,5 +1,6 @@
 
 def capitalize_each_string(input)
+	input.each { |word| word.upcase }
   #implement your solution here
 end
 
