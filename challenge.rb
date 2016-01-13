@@ -1,27 +1,29 @@
-
 def capitalize_each_string(input)
-	input.each { |word| word.upcase }
+  input.map { |word| word.capitalize }
   #implement your solution here
 end
 
-def fetch_the_dog(input)
-  #implement your solution here
+def fetch_the_dog(input) 
+	input.find_all { |word| word == "dog" }
 end
 
 def no_dogs_allowed(input)
+	input.reject { |word| word == "dog" }
   #implement your solution here
 end
 
 def count_the_animals(input)
+  input.count
   #implement your solution here
 end
 
 def fetch_the_first_two(input)
+  input.take(2)
   #implement your solution here
 end
 
 def fetch_CD_animals(input)
-  #implement your solution here
+	input.select { |word| word.start_with?("c", "d") }
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
