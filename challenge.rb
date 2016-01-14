@@ -20,7 +20,7 @@ def fetch_the_first_two(input)
 end
 
 def fetch_CD_animals(input)
-    input.find_all{|animal| animal.length == 3}
+    input.find_all{|animal| animal[0] == 'c' or animal[0] == 'd' }
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
