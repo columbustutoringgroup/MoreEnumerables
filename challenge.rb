@@ -20,7 +20,7 @@ def fetch_the_first_two(input)
 end
 
 def fetch_CD_animals(input)
-  input.reject {|string| string[0] != "c" && string[0] != "d"}
+  input.find_all {|string| string[0] == "c" || string[0] == "d"}
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
