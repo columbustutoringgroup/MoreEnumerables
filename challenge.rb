@@ -1,12 +1,12 @@
 
 def capitalize_each_string(input)
   #implement your solution here
-  return input.map { |e| e.capitalize }
+  input.map { |e| e.capitalize }
 end
 
 def fetch_the_dog(input)
   #implement your solution here
-  return [].push(input.find {|e| e == "dog"})
+  input.grep("dog")
 end
 
 def no_dogs_allowed(input)
@@ -16,17 +16,17 @@ end
 
 def count_the_animals(input)
   #implement your solution here
-  return input.count
+  input.count
 end
 
 def fetch_the_first_two(input)
   #implement your solution here
-  return input.first(2)
+  input.first(2)
 end
 
 def fetch_CD_animals(input)
   #implement your solution here
-  return input.select {|e| e[0] == "c" or e[0] == "d"}
+  input.select {|e| e[0] == "c" or e[0] == "d"}
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
