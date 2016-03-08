@@ -1,6 +1,6 @@
 
 def capitalize_each_string(input)
-  input.collect { |animal| animal.capitalize }
+  input.collect { |animal| animal.to_s.capitalize }
 end
 
 def fetch_the_dog(input)
@@ -21,9 +21,7 @@ def fetch_the_first_two(input)
 end
 
 def fetch_CD_animals(input)
-  input.select do |animal|
-    animal[0].downcase == 'c' or animal[0].downcase == 'd'
-  end
+  input.grep(/^[cCdD]/)
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
