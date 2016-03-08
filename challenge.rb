@@ -1,6 +1,6 @@
 
 def capitalize_each_string(input)
-  input.collect { |animal| animal.to_s.capitalize }
+  input.collect(&:capitalize)
 end
 
 def fetch_the_dog(input)
