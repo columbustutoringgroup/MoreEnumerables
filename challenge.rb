@@ -1,26 +1,29 @@
 
 def capitalize_each_string(input)
-  #implement your solution here
+  input.collect { |animal| animal.capitalize }
 end
 
 def fetch_the_dog(input)
-  #implement your solution here
+  # In preference to turning the result of .detect or .find into an Array.
+  input.find_all { |animal| animal == "dog" }
 end
 
 def no_dogs_allowed(input)
-  #implement your solution here
+  input.reject { |animal| animal == "dog" }
 end
 
 def count_the_animals(input)
-  #implement your solution here
+  input.count
 end
 
 def fetch_the_first_two(input)
-  #implement your solution here
+  input.first(2)
 end
 
 def fetch_CD_animals(input)
-  #implement your solution here
+  input.select do |animal|
+    animal[0].downcase == 'c' or animal[0].downcase == 'd'
+  end
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
@@ -29,7 +32,7 @@ animals = ["cat", "moose", "dog", "bird"]
 
 p capitalize_each_string(animals) == ["Cat", "Moose", "Dog", "Bird"]
 
-p fetch_the_dog(animals) == ["dog"] 
+p fetch_the_dog(animals) == ["dog"]
 
 p no_dogs_allowed(animals) == ["cat", "moose", "bird"]
 
