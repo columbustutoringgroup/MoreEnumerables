@@ -26,7 +26,7 @@ end
 
 def fetch_CD_animals(input)
   #implement your solution here
-  input.select{|s| s.downcase =~ /^[cd][a-z]+/}
+  input.select{|s| s =~ /^[cd][a-z]+/i}
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
