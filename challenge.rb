@@ -1,7 +1,10 @@
 
 def capitalize_each_string(input)
-  #implement your solution here
-  input.map {|s| s.capitalize}
+  # This works because the & operator creates a .Proc (with access to the contents
+  # of input) using #capitalize from .String (or whichever
+  # class the contents of input happen to be instances of) and passes it to #map
+  # as a block?
+  input.map(&:capitalize)
 end
 
 def fetch_the_dog(input)
