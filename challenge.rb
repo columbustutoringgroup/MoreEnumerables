@@ -26,7 +26,7 @@ end
 
 def fetch_CD_animals(input)
   #implement your solution here
-  input.select{|s| s.downcase.chars[0] == 'c' || s.downcase.chars[0] == 'd'}
+  input.select{|s| s.downcase.chars[0] == '[cd]'}
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
