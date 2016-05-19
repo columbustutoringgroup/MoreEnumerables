@@ -9,12 +9,12 @@ end
 
 def fetch_the_dog(input)
   #implement your solution here
-  input.find_all {|s| s.downcase == "dog"}
+  input.find_all {|s| s =~ /dog/i}
 end
 
 def no_dogs_allowed(input)
   #implement your solution here
-  input.reject {|s| s.downcase == "dog"}
+  input.reject {|s| s =~ /dog/i}
 end
 
 def count_the_animals(input)
