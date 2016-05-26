@@ -20,7 +20,7 @@ def fetch_the_first_two(input)
 end
 
 def fetch_CD_animals(input)
-  input.select{ |s| s.downcase[0] == "c" || s.downcase[0] == "d" }
+  input.find_all{ |s| (/(c|d|C|D).*/ =~ s) == 0}
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
