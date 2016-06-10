@@ -4,7 +4,8 @@ def capitalize_each_string(input)
 end
 
 def fetch_the_dog(input)
-  #implement your solution here
+  dog = "dog"
+  input.select { |word| word == dog }
 end
 
 def no_dogs_allowed(input)
