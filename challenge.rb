@@ -13,7 +13,7 @@ def no_dogs_allowed(input)
 end
 
 def count_the_animals(input)
-  #implement your solution here
+  input.count 
 end
 
 def fetch_the_first_two(input)
