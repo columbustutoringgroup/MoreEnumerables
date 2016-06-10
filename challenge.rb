@@ -9,7 +9,7 @@ def fetch_the_dog(input)
 end
 
 def no_dogs_allowed(input)
-  #implement your solution here
+  input - fetch_the_dog(input)
 end
 
 def count_the_animals(input)
