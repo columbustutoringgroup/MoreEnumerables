@@ -25,8 +25,8 @@ def fetch_CD_animals(input)
   input.select { |word| starts_with(word, characters) } 
 end
 
-def starts_with(word, characters)
-  characters.any? { |character| word.start_with? character }
+def starts_with_any?(word, characters)
+  characters.any? { |character| word.downcase.start_with? character.downcase }
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
