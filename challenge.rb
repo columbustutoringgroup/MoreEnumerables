@@ -21,7 +21,12 @@ def fetch_the_first_two(input)
 end
 
 def fetch_CD_animals(input)
-  #implement your solution here
+  characters = ["c", "d"]
+  input.select { |word| starts_with(word, characters) } 
+end
+
+def starts_with(word, characters)
+  characters.any? { |character| word.start_with? character }
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
