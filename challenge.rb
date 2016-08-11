@@ -21,7 +21,7 @@ def count_the_animals(input)
 end
 
 def fetch_the_first_two(input)
-  input.take 2
+  input.first 2
   # alternative
   # input[0..1]
 end
