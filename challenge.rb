@@ -1,13 +1,10 @@
 
 def capitalize_each_string(input)
-  input.map! { |string| string.capitalize}
-
-  return input
+  #implement your solution here
 end
 
 def fetch_the_dog(input)
-  dogLocation = input.index("dog")
-  return input[dogLocation.to_i]
+  #implement your solution here
 end
 
 def no_dogs_allowed(input)
@@ -32,7 +29,7 @@ animals = ["cat", "moose", "dog", "bird"]
 
 p capitalize_each_string(animals) == ["Cat", "Moose", "Dog", "Bird"]
 
-p fetch_the_dog(animals) == ["dog"]
+p fetch_the_dog(animals) == ["dog"] 
 
 p no_dogs_allowed(animals) == ["cat", "moose", "bird"]
 
