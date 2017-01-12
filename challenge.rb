@@ -29,7 +29,7 @@ animals = ["cat", "moose", "dog", "bird"]
 
 p capitalize_each_string(animals) == ["Cat", "Moose", "Dog", "Bird"]
 
-#p fetch_the_dog(animals) == ["dog"] 
+p fetch_the_dog(animals) == ["dog"] 
 
 p no_dogs_allowed(animals) == ["cat", "moose", "bird"]
 
