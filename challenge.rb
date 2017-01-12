@@ -1,26 +1,38 @@
 
 def capitalize_each_string(input)
-  #implement your solution here
+  temp = []
+  input.each do |element|
+  	temp.push( element.capitalize )
+  end
+  return temp
 end
 
 def fetch_the_dog(input)
-  #implement your solution here
+  temp = input.select {|x| x=="dog"}
+  return temp
 end
 
 def no_dogs_allowed(input)
-  #implement your solution here
+  temp = input - ["dog"]
+  return temp
 end
 
 def count_the_animals(input)
-  #implement your solution here
+  input.length
 end
 
 def fetch_the_first_two(input)
-  #implement your solution here
+  [input[0], input[1]]
 end
 
 def fetch_CD_animals(input)
-  #implement your solution here
+  cd_array = []
+  for element in input do
+  	if element[0] == "c" || element[0] == "d"
+  		cd_array << element
+  	end
+  end
+  return cd_array
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
