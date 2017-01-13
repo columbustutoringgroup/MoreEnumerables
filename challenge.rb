@@ -8,7 +8,7 @@ def fetch_the_dog(input)
 end
 
 def no_dogs_allowed(input)
-  input.select{|word| word!='dog'}
+  input.reject{|word| word=='dog'}
 end
 
 def count_the_animals(input)
@@ -20,7 +20,7 @@ def fetch_the_first_two(input)
 end
 
 def fetch_CD_animals(input)
-  input.keep_if{|word| word=~/[cd][a-z]+/}
+  input.grep(/[cd][a-z]+/)
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
