@@ -1,11 +1,11 @@
 
 def capitalize_each_string(input)
-  	#implement your solution here
-	input.map { |creature| creature.capitalize }
+	#implement your solution here
+	input.map(&:capitalize)
 end
 
 def fetch_the_dog(input)
-  	#implement your solution here	
+	#implement your solution here	
 	input.select { |creature| creature == 'dog' }
 end
 
@@ -25,7 +25,7 @@ def fetch_the_first_two(input)
 end
 
 def fetch_CD_animals(input)
-  	#implement your solution here
+	#implement your solution here
 	input.grep(/^[cd][a-z]*$/)
 end
 
