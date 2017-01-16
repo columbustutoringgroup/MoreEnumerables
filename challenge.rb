@@ -1,4 +1,3 @@
-
 def capitalize_each_string(input)
 	#implement your solution here
 	input.map(&:capitalize)
