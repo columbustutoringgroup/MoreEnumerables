@@ -8,31 +8,27 @@ def capitalize_each_string(input)
 end
 
 def fetch_the_dog(input)
-  temp = input.select {|x| x=="dog"}
+  temp = [input.detect { |x| x == "dog"}]
   return temp
 end
 
 def no_dogs_allowed(input)
-  temp = input - ["dog"]
+  temp = input.reject {|x| x=="dog"}
   return temp
 end
 
 def count_the_animals(input)
-  input.length
+  input.count
 end
 
 def fetch_the_first_two(input)
-  [input[0], input[1]]
+  temp = input.first(2)
+  return temp
 end
 
 def fetch_CD_animals(input)
-  cd_array = []
-  for element in input do
-  	if element[0] == "c" || element[0] == "d"
-  		cd_array << element
-  	end
-  end
-  return cd_array
+  temp = input.select { |x| x[0] == "c" || x[0] == "d"}
+  return temp
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
