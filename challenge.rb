@@ -20,7 +20,7 @@ def fetch_the_first_two(input)
 end
 
 def fetch_CD_animals(input)
-  input.find_all { |string| string[0] == "c" || string[0] == "d"}
+  input.select {|str| str.start_with? "c" or str.start_with? "d"}
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
