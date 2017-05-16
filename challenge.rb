@@ -1,26 +1,29 @@
 
 def capitalize_each_string(input)
-  #implement your solution here
+  input.map {|x| x.capitalize }
 end
 
 def fetch_the_dog(input)
-  #implement your solution here
+  input.select {|x| x.downcase == "dog"}
 end
 
 def no_dogs_allowed(input)
-  #implement your solution here
+  input.reject {|x| x.downcase == "dog"}
 end
 
 def count_the_animals(input)
-  #implement your solution here
+  input.length
 end
 
 def fetch_the_first_two(input)
-  #implement your solution here
+  input.take(2)
 end
 
 def fetch_CD_animals(input)
-  #implement your solution here
+  # 1) Would want to downcase input, leaving this out on purpose
+  # 2) is there a more succinct way to test for array membership?
+  #      e.g. "a" in ["a", "b"] in python?
+  input.find_all {|x| ["c", "d"].member? x[0] }
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
