@@ -20,9 +20,8 @@ def fetch_the_first_two(input)
 end
 
 def fetch_CD_animals(input)
-  # alternatively: input.select { |animal| animal =~ /cat|dog/ }, optionally with the regex 'i' option
-  # but I already used that and intersection is more concise.
-  input & ["cat", "dog"]
+  # Keep animals if they start
+  input.keep_if { |animal| animal =~ /^[cd].*/i }
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
@@ -39,4 +38,4 @@ p count_the_animals(animals) == 4
 
 p fetch_the_first_two(animals)  == ["cat", "moose"]
 
-p fetch_CD_animals(animals) == ["cat", "dog"]
+p fetch_CD_animals(animals | ["bobcat", "capybara"]) == ["cat", "dog", "capybara"]
