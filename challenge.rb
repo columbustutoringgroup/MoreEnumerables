@@ -1,26 +1,34 @@
 
 def capitalize_each_string(input)
-  #implement your solution here
+  input.map do |val|
+    val.capitalize
+  end
 end
 
 def fetch_the_dog(input)
-  #implement your solution here
+  input.find_all do |animal|
+    animal.downcase == "dog"
+  end
 end
 
 def no_dogs_allowed(input)
-  #implement your solution here
+  input.dup.delete_if do |animal|
+    animal.downcase == "dog"
+  end
 end
 
 def count_the_animals(input)
-  #implement your solution here
+  input.count
 end
 
 def fetch_the_first_two(input)
-  #implement your solution here
+  input.take(2)
 end
 
 def fetch_CD_animals(input)
-  #implement your solution here
+  input.find_all do |animal|
+    ["c","d"].include?(animal[0])
+  end
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
