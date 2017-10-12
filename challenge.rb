@@ -1,25 +1,18 @@
 
 def capitalize_each_string(input)
-  inputCopy = Marshal.load(Marshal.dump(input))
-  inputCopy.map! { |element|
-    element.capitalize
-  }
+  input.map &:capitalize
 end
 
 def fetch_the_dog(input)
-  input.select { |element| 
-    element == "dog"
-  }
+  input.select { |element| element == "dog" }
 end
 
 def no_dogs_allowed(input)
-  input.select { |element| 
-    element != "dog"
-  }
+  input.reject { |element| element == "dog" }
 end
 
 def count_the_animals(input)
-  input.length
+  input.count
 end
 
 def fetch_the_first_two(input)
@@ -27,9 +20,7 @@ def fetch_the_first_two(input)
 end
 
 def fetch_CD_animals(input)
-  input.select { |element| 
-    element[0] == "c" || element[0] == "d"
-  }
+  input.grep(/^[cd]/)
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
