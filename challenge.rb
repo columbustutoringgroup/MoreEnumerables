@@ -1,18 +1,16 @@
 
 def capitalize_each_string(input)
-  input.map do |val|
-    val.capitalize
-  end
+  input.map &:capitalize 
 end
 
 def fetch_the_dog(input)
-  input.find_all do |animal|
+  input.select do |animal|
     animal.downcase == "dog"
   end
 end
 
 def no_dogs_allowed(input)
-  input.dup.delete_if do |animal|
+  input.reject do |animal|
     animal.downcase == "dog"
   end
 end
@@ -26,9 +24,7 @@ def fetch_the_first_two(input)
 end
 
 def fetch_CD_animals(input)
-  input.find_all do |animal|
-    ["c","d"].include?(animal[0])
-  end
+  input.grep /^(c|d)/
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
