@@ -1,6 +1,6 @@
 
 def capitalize_each_string(input)
-  input.map{|i| i.capitalize}
+  input.map(&:capitalize)
 end
 
 def fetch_the_dog(input)
@@ -20,7 +20,7 @@ def fetch_the_first_two(input)
 end
 
 def fetch_CD_animals(input)
-  input.select{|i| i.start_with?("c") || i.start_with?("d")}
+  input.grep(/\Ac|\Ad/)
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
