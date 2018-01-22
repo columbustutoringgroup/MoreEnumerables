@@ -1,10 +1,10 @@
 
 def capitalize_each_string(input)
-  input.map { |string| string.capitalize }
+  input.map(&:capitalize)
 end
 
 def fetch_the_dog(input)
-  input.find_all { |animal| animal == "dog" }
+  input.select { |animal| animal == "dog" }
 end
 
 def no_dogs_allowed(input)
@@ -16,11 +16,11 @@ def count_the_animals(input)
 end
 
 def fetch_the_first_two(input)
-  input.take(2)
+  input.first(2)
 end
 
 def fetch_CD_animals(input)
-  input.select { |animal| animal == "cat" || animal == "dog" }
+  input.grep(/\A[cd]/)
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
