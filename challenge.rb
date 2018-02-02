@@ -1,26 +1,32 @@
 
-def capitalize_each_string(input)
+def capitalize_each_string(animal)
   #implement your solution here
+  animal.map { |a| a.capitalize }
 end
 
-def fetch_the_dog(input)
+def fetch_the_dog(animal)
   #implement your solution here
+	animal.find_all { |a| a == 'dog' }
 end
 
-def no_dogs_allowed(input)
+def no_dogs_allowed(animal)
   #implement your solution here
+  animal.reject {|a| a == 'dog' }
 end
 
-def count_the_animals(input)
+def count_the_animals(animal)
   #implement your solution here
+  animal.count
 end
 
-def fetch_the_first_two(input)
+def fetch_the_first_two(animal)
   #implement your solution here
+  animal.first(2)
 end
 
-def fetch_CD_animals(input)
+def fetch_CD_animals(animal)
   #implement your solution here
+  animal.select { |a| a.start_with?('c', 'd') }
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
