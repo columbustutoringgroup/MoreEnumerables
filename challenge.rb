@@ -1,26 +1,26 @@
 
 def capitalize_each_string(input)
-  #implement your solution here
+  input.map { |str| str.capitalize }
 end
 
 def fetch_the_dog(input)
-  #implement your solution here
+  input.find_all { |str| str.match(/dog/) }
 end
 
 def no_dogs_allowed(input)
-  #implement your solution here
+  input.reject { |str| str.match(/dog/) }
 end
 
 def count_the_animals(input)
-  #implement your solution here
+  input.size
 end
 
 def fetch_the_first_two(input)
-  #implement your solution here
+  input.first(2)
 end
 
 def fetch_CD_animals(input)
-  #implement your solution here
+  input.select { |a| a.match(/\A[cd]/)}
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
