@@ -1,26 +1,27 @@
 
 def capitalize_each_string(input)
-  return input.map{|x| x.capitalize}
+  input.map(&:capitalize)
 end
 
 def fetch_the_dog(input)
-  return input.select{|x| x=="dog"} 
+  input.select{|x| x=="dog"}
 end
 
 def no_dogs_allowed(input)
-  return input.reject{|x| x=="dog"}
+  input.reject{|x| x=="dog"}
 end
 
 def count_the_animals(input)
-  return input.size
+  input.size
 end
 
 def fetch_the_first_two(input)
-  return input[0..1]
+  input.first(2)
 end
 
 def fetch_CD_animals(input)
-  return input.find_all{|x| ['c','d'].include? x.downcase[0]}
+  #input.find_all{|x| ['c','d'].include? x.downcase[0]}
+  input.grep(/^[cdCD]{1}[a-zA-Z ]*$/)
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
