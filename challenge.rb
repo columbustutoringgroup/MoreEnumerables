@@ -12,15 +12,15 @@ def no_dogs_allowed(input)
 end
 
 def count_the_animals(input)
-  input.length
+  input.count
 end
 
 def fetch_the_first_two(input)
-  input[0..1]
+  input.first(2)
 end
 
 def fetch_CD_animals(input)
-  input.keep_if { |w| w.start_with?('c', 'C', 'd', 'D') }
+  input.find_all { |w| w.start_with?('c', 'C', 'd', 'D') }
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
