@@ -19,7 +19,6 @@ def fetch_the_first_two(input)
 end
 
 def fetch_CD_animals(input)
-  #implement your solution here
   return input.grep(/^[cd]/)
 end
 
