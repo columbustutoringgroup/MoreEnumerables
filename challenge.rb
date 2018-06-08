@@ -8,9 +8,7 @@ def capitalize_each_string(input)
   end
   
   def no_dogs_allowed(input)
-    input = input.dup
-    input.delete("dog")
-    return input
+    input.reject { |animal| animal == "dog" }
   end
   
   def count_the_animals(input)
