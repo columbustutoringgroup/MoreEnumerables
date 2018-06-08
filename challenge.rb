@@ -20,7 +20,7 @@ def capitalize_each_string(input)
   end
   
   def fetch_CD_animals(input)
-    input.find_all { |animal| animal.start_with?("c", "d")}
+    input.grep(/^[c,d]/)
   end
   
   ## DO NOT CHANGE CODE BELOW THIS LINE ##
