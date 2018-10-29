@@ -1,29 +1,25 @@
 def capitalize_each_string(input)
-input.map{ |x| x.capitalize}
+  input.map{ |x| x.capitalize}
 end
 
 def fetch_the_dog(input)
-#help
-# can i use .collect?
-# input.collect {"dog"}
-input.select {|e| e == "dog"}
+  input.select {|e| e == "dog"}
 end
 
 def no_dogs_allowed(input)
-input.reject {|e| e == "dog"}
+  input.reject {|e| e == "dog"}
 end
 
 def count_the_animals(input)
-input.size
+  input.size
 end
 
 def fetch_the_first_two(input)
-# does this work?
-input [0,2]
+  input [0,2]
 end
 
 def fetch_CD_animals(input)
-input.select { |e| e[/\b[cd]/]}
+  input.select { |e| e[/\b[cd]/]}
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
