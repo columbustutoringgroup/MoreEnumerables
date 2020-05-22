@@ -1,26 +1,26 @@
 
 def capitalize_each_string(input)
-  #implement your solution here
+  input.map {|item| item.capitalize}
 end
 
 def fetch_the_dog(input)
-  #implement your solution here
+  input.select {|item| item == "dog" }
 end
 
 def no_dogs_allowed(input)
-  #implement your solution here
+  input.find_all {|item| item != "dog"}
 end
 
 def count_the_animals(input)
-  #implement your solution here
+  input.count
 end
 
 def fetch_the_first_two(input)
-  #implement your solution here
+  input.take(2)
 end
 
 def fetch_CD_animals(input)
-  #implement your solution here
+  input.select {|item| (item[0].downcase == "c") || (item[0].downcase == "d")}
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
