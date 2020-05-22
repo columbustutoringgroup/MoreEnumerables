@@ -8,7 +8,7 @@ You've already used `sort_by` and similar equivalents, now let's learn more abou
 - Don't duplicate methods for each function. If you use `select` once, don't use it again for the challenge.
 
 ## Resources
-- [Ruby Documentation: Enumerable](https://github.com/djlax805/MoreEnumerables.git)
+- [Ruby Documentation: Enumerable](https://ruby-doc.org/core-2.6.5/Enumerable.html)
 - [The Bastards Book of Ruby: Enumerables](http://ruby.bastardsbook.com/chapters/enumerables/)
 
 
