@@ -4,7 +4,7 @@ def capitalize_each_string(input)
 end
 
 def fetch_the_dog(input)
-  input.find_all{|str| str == 'dog'}
+  input.filter{|str| str == 'dog'}
 end
 
 def no_dogs_allowed(input)
@@ -20,7 +20,7 @@ def fetch_the_first_two(input)
 end
 
 def fetch_CD_animals(input)
-  input.find_all{|animal| animal[0] == 'd' || animal[0] == 'c'}
+  input.select{|animal| animal[0] == 'd' || animal[0] == 'c'}
 end
 
 ## DO NOT CHANGE CODE BELOW THIS LINE ##
